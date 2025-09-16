@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="/rock paper scissors/rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="/rock paper scissors/paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="/rock paper scissors/scissors.png" />
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+    <script src="app.js"></script>
+
+    <hr>
+
+
+
+
+    <style>
+    body { text-align: center; font-family: Arial; margin-top: 50px; }
+    button { padding: 10px 20px; font-size: 18px; }
+    p { font-size: 22px; }
+  </style>
+<hr>
+
+
+<body>
+  <h2>Click Counter</h2>
+  <p id="count">0</p>
+  <button id="btn">Click Me!</button>
+
+  <script>
+    var count = 0;
+    var counter = document.getElementById("count");
+    var btn = document.getElementById("btn");
+
+    btn.onclick = function() {
+      count++;
+      counter.textContent = count;
+    }
+  </script>
+
+  
+<hr>
+
+
+<body>
+  <h2>Light Bulb On/Off</h2>
+  <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif">
+
+  <br>
+  <button onclick="turnOn()">ON</button>
+  <button onclick="turnOff()">OFF</button>
+
+  <script>
+    function turnOn() {
+      document.getElementById("bulb").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+    function turnOff() {
+      document.getElementById("bulb").src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+    
+  </script>
+  <hr>
+
+
+  <h2>Mini Quiz</h2>
+
+  <style>
+    body { font-family: Arial, sans-serif; 
+        text-align: center;
+        margin-top: 40px; }
+
+    #quiz-box { width: 400px; margin: auto; padding: 20px; border: 2px solid #333; border-radius: 10px; }
+    h2 { margin-bottom: 20px; }
+
+    .option { display: block; 
+        margin: 10px 0; padding: 10px;
+         cursor: pointer; border: 1px solid #444;
+          border-radius: 5px; }
+          
+    .option:hover { background: #f0f0f0; }
+
+    button { margin-top: 20px; padding: 10px 15px; }
+  </style>
+</head>
+<body>
+  <div id="quiz-box">
+    <h2 id="question">Question text here</h2>
+    <div id="options"></div>
+    <button id="next">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
